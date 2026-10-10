@@ -27,19 +27,16 @@ al sitio publicado.
 
 ## GitHub Pages
 
-Repositorio privado: [Bulmak/SharkGruas](https://github.com/Bulmak/SharkGruas).
-La activación de Pages fue rechazada por GitHub porque el plan actual no
-admite Pages para este repositorio privado. El workflow está preparado,
-pero su ejecución automática quedó desactivada para evitar despliegues fallidos.
+Repositorio público: [Bulmak/SharkGruas](https://github.com/Bulmak/SharkGruas).
+Sitio: [Shark Grúas](https://bulmak.github.io/SharkGruas/).
 
-Para habilitarlo cuando la cuenta tenga un plan compatible con Pages en
-repositorios privados, activar Pages y después habilitar el workflow desde
-**Actions → Publicar maqueta en GitHub Pages → Enable workflow**.
-
-En el repositorio, seleccionar **Settings → Pages → Source → GitHub Actions**.
-Una vez habilitado, el workflow `.github/workflows/pages.yml` prepara y publica la maqueta con
+GitHub Pages usa **Settings → Pages → Source → GitHub Actions**.
+El workflow `.github/workflows/pages.yml` está habilitado y prepara y publica la maqueta con
 cada push a `main`, y también permite una ejecución manual.
 La URL final se obtiene del despliegue de GitHub Pages.
+
+El sitio es público. La maqueta conserva la directiva `noindex, nofollow`
+para pedir a los buscadores que no la indexen durante esta etapa.
 
 Esta publicación corresponde a la maqueta estática. Next.js, Supabase,
 n8n y el panel de administración pertenecen a etapas posteriores.
