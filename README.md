@@ -27,8 +27,17 @@ al sitio publicado.
 
 ## GitHub Pages
 
+Repositorio privado: [Bulmak/SharkGruas](https://github.com/Bulmak/SharkGruas).
+La activación de Pages fue rechazada por GitHub porque el plan actual no
+admite Pages para este repositorio privado. El workflow está preparado,
+pero su ejecución automática quedó desactivada para evitar despliegues fallidos.
+
+Para habilitarlo cuando la cuenta tenga un plan compatible con Pages en
+repositorios privados, activar Pages y después habilitar el workflow desde
+**Actions → Publicar maqueta en GitHub Pages → Enable workflow**.
+
 En el repositorio, seleccionar **Settings → Pages → Source → GitHub Actions**.
-El workflow `.github/workflows/pages.yml` prepara y publica la maqueta con
+Una vez habilitado, el workflow `.github/workflows/pages.yml` prepara y publica la maqueta con
 cada push a `main`, y también permite una ejecución manual.
 La URL final se obtiene del despliegue de GitHub Pages.
 
